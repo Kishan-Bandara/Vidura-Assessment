@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796489567866",
+    "project_id": "vidura-assessment",
+    "storage_bucket": "vidura-assessment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796489567866:android:9362a12fcc8450bb9335c3",
+        "android_client_info": {
+          "package_name": "com.example.vidura_assessment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796489567866-m1pgkpbb5sfoauetmuj5udpe7nnlq5je.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgxVglqmABUxxw3j_R9LG6eWwJwVqMkyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796489567866-m1pgkpbb5sfoauetmuj5udpe7nnlq5je.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
