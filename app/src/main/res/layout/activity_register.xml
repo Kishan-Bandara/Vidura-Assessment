@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/tree"
@@ -18,7 +19,8 @@
         android:layout_marginRight="15dp"
         android:background="@android:color/background_dark"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:padding="10dp"
         android:text="Password"
         android:textColor="@android:color/background_light"
@@ -27,29 +29,7 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Email"
-        app:layout_constraintVertical_bias="0.194" />
-
-    <EditText
-        android:id="@+id/password2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@android:color/background_dark"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        android:text="Password"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintVertical_bias="0.072" />
 
     <EditText
         android:id="@+id/firstName"
@@ -61,6 +41,7 @@
         android:layout_marginRight="15dp"
         android:background="@android:color/background_dark"
         android:ems="10"
+        android:hint="First Name"
         android:inputType="textPersonName"
         android:padding="10dp"
         android:text="First Name"
@@ -89,10 +70,10 @@
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/firstName"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintVertical_bias="0.035" />
 
     <EditText
         android:id="@+id/Email"
@@ -105,23 +86,24 @@
         android:layout_marginRight="15dp"
         android:background="@android:color/background_dark"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         android:padding="10dp"
         android:text="Email"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lastName"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintVertical_bias="0.058" />
 
     <TextView
         android:id="@+id/Vidura"
-        android:layout_width="104dp"
-        android:layout_height="46dp"
+        android:layout_width="163dp"
+        android:layout_height="54dp"
         android:background="@android:drawable/alert_dark_frame"
         android:text="Vidura"
+        android:padding="10dp"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -146,10 +128,9 @@
         app:layout_constraintTop_toBottomOf="@+id/Vidura" />
 
     <Button
-        android:id="@+id/register"
+        android:id="@+id/logInBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:background="@android:color/holo_red_dark"
         android:text="REGISTER"
         android:textStyle="bold"
@@ -157,11 +138,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <TextView
-        android:id="@+id/logIn"
+        android:id="@+id/registerText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Log In"
@@ -170,6 +150,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/register" />
+        app:layout_constraintTop_toBottomOf="@+id/logInBtn"
+        app:layout_constraintVertical_bias="0.217" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
