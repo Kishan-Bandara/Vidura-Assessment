@@ -12,15 +12,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
         android:background="@android:color/background_dark"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="10dp"
-        android:text="Password"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,21 +77,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
-    <Button
-        android:id="@+id/FaceBooklogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="184dp"
-        android:background="#223D80"
-        android:text="Facebook Log In"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="1.0" />
-
     <TextView
         android:id="@+id/registerText"
         android:layout_width="wrap_content"
@@ -108,5 +90,31 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logInBtn" />
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/loginButtonFb"
+        android:layout_width="169dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:text="facebook log in"
+        android:textColor="@color/cardview_light_background"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/registerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logInBtn"
+        app:layout_constraintVertical_bias="0.32"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/FbUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="657dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
